@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: 'Hammersmith One', sans-serif;
+  box-sizing: border-box;
+  font-size: 10px; }
+
+header {
+  position: relative;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%; }
+  header .dark {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(1, 28, 55, 0.8);
+    position: absolute; }
+  header .container {
+    width: 80%;
+    height: 5rem;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    display: flex;
+    justify-content: space-around; }
+    header .container #logo {
+      width: 15%; }
+      header .container #logo h1 {
+        font-size: 4rem;
+        color: #FDE128;
+        font-weight: bold; }
+      header .container #logo h6 {
+        color: #fff;
+        font-size: 1.4rem;
+        letter-spacing: .35rem; }
+    header .container nav {
+      width: 50%; }
+      header .container nav ul {
+        display: flex;
+        justify-content: space-evenly; }
+        header .container nav ul li {
+          max-width: 100%;
+          line-height: 5rem; }
+          header .container nav ul li a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2rem;
+            letter-spacing: .1rem;
+            color: #d3d1d1;
+            font-weight: bold; }
+  header #shape {
+    position: absolute;
+    width: 22rem;
+    height: 28rem;
+    top: 38%;
+    right: 15%;
+    border: 8px solid #FDE128; }
+
+section h3 {
+  color: #002E5A;
+  font-size: 2.5rem;
+  font-weight: bold; }
+section h4 {
+  color: gray;
+  font-size: 1.5rem; }
+section p {
+  color: #464545;
+  font-size: 1.2em;
+  line-height: 1.8rem;
+  font-weight: bold; }
+
+section#about {
+  height: 125vh;
+  position: relative;
+  margin-top: 7rem;
+  display: block; }
+  section#about .container_1 {
+    display: flex;
+    height: 50vh;
+    width: 100%; }
+  section#about .box_left {
+    width: 34%;
+    position: absolute;
+    left: 17%; }
+  section#about .box_right {
+    max-width: 100%;
+    position: absolute;
+    right: 14%;
+    z-index: 1; }
+  section#about .strip {
+    position: absolute;
+    top: -7rem;
+    right: 20.5%;
+    height: 61vh;
+    width: 20rem;
+    background-color: #FDE128; }
+  section#about .container_2 {
+    position: absolute;
+    height: 75vh;
+    width: 100%;
+    bottom: 0;
+    background-color: #F4F4F4; }
+    section#about .container_2 .box_left, section#about .container_2 .box_right {
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      width: 34%; }
+
+#strip_contact {
+  height: 7rem;
+  width: 100%;
+  color: #F4F4F4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  line-height: 7rem;
+  background-color: #002E5A; }
+  #strip_contact span, #strip_contact button {
+    margin-left: 25%; }
+  #strip_contact button {
+    background-color: #FDE128;
+    border-color: #FDE128;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #002E5A;
+    height: 3rem;
+    width: 12rem; }
+
+#services {
+  position: relative;
+  margin-top: 5rem;
+  height: 60vh;
+  text-align: center; }
+  #services .container {
+    display: flex;
+    position: absolute;
+    top: 22%;
+    width: 65%;
+    left: 17.5%;
+    justify-content: space-between; }
+    #services .container .box {
+      max-width: 100%;
+      text-align: left; }
+      #services .container .box h5 {
+        font-size: 1.5rem;
+        color: #002E5A;
+        font-weight: bold; }
+
+#stats {
+  height: 40vh;
+  width: 100%;
+  background-image: url("../img/stat.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(1, 1, 1, 0.5);
+  background-size: 100%;
+  color: #fff; }
+  #stats .content-box {
+    background-color: #002E5A;
+    opacity: .8;
+    height: 100%; }
+    #stats .content-box .col-md-3 {
+      margin-top: 8rem;
+      position: relative;
+      z-index: 1; }
+      #stats .content-box .col-md-3 h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: .4rem; }
+      #stats .content-box .col-md-3 p {
+        color: #fff;
+        margin-top: 1rem; }
+
+#clip {
+  height: 55vh;
+  position: relative; }
+  #clip .strip {
+    width: 17rem;
+    height: 55vh;
+    background-color: #FDE128;
+    position: absolute;
+    top: 0;
+    left: 17%; }
+  #clip .box_left {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 10%; }
+  #clip .box_right {
+    position: absolute;
+    width: 30%;
+    right: 10%; }
+
+/*# sourceMappingURL=style.css.map */
